@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="js/burger.js" defer></script>
+    <script src="js/modal.js" defer></script>
+    <script src="js/slider.js" defer></script>
+    <script src="js/filter.js" defer></script>
+    <script src="js/tab.js" defer></script>
+    <script src="js/accord.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+    <div class="ar">
+    <div class="aura">
+        <h1>AURA</h1>
+        <p>stickers collection</p>
+    </div>
+    <div class="menut">
+        <a href="#">Авторы</a>
+        <a href="#">Коллекции</a>
+        <a href="#">Сервисы</a>
+    </div>
+    <ul class="menu">
+        <li><a class="menuItem" href="#">Авторы</a></li>
+        <li><a class="menuItem" href="#">Коллекции</a></li>
+        <li><a class="menuItem" href="#">Сервисы</a></li>
+    </ul>
+    <button class="hamburger">
+        <i class="menuIcon material-icons">≡</i>
+        <i class="closeIcon material-icons">✕</i>
+    </button>
+    </div>
+    <button id="kosh">Кошелёк</button>
+    </div>
+    <div class="body">
+        <div class="stic">
+            <div class="crypt">
+                <p>Площадка для реалезации криптостикеров</p>
+                <button id="bt1">Купить</button>
+                <button id="bt2">Стать автором</button>
+            </div>
+            <img src="img/stic.png" alt="" id="stic">
+        </div>
+        <div class="ved">
+            <div class="auc">
+                <p>Аукцион</p>
+                <Button>·    Live auction</Button>
+            </div>
+            <img src="img/wit.png" alt="" id="img1">
+            <img src="img/1-1.png" alt="" id="img2">
+            <p id="p2">Witcherrr_3(xml_t5)</p>
+            <div class="with">
+                <img src="img/2-2.png" alt="" id="img3">
+                <img src="img/3-3.png" alt="" id="img4">
+            </div>
+            <div class="modal-open">
+                <button id="open-modal__btn">Сделать ставку</button>
+            </div>
+            
+            <div id="modal" class="modal">
+                <div class="modal__content">
+                    <span class="modal__close">&times;</span>
+                    <h2 id="rz">Размер ставки:</h2>
+                    <button id="bt0.11">0.11 ETH</button>
+                    <button id="bt0.11">0.12 ETH</button>
+                </div>
+            </div>
+        </div>
+        
+        <p id="dra">Другие аукционы</p>
+        
+        <div class="drau">
+        <nav class="nave">
+            <ul>
+                <li data-f="all">All</li>
+                <li data-f="0.01ETH" >0.01ETH</li>
+                <li data-f="0.1ETH" >0.1ETH</li>
+                <li data-f="1.0ETH" >1.0ETH</li>
+            </ul>
+        </nav>
+        <div class="cl1">
+            <div class="dr_1 0.1ETH">
+            <img src="img/1.png" alt="" id="i1">
+            <img src="img/1.1.png" alt="" id="i11">
+            <h2>Alien (green) e_e</h2>
+            <h1>0.02 ETH</h1>
+            <p>03 часа 25 мин 23 сек</p>
+            </div>
+            <div class="dr_2 0.1ETH" id="hide3">
+            <img src="img/2.png" alt="" id="i1">
+            <img src="img/2.2.png" alt="" id="i11">
+            <h2>CoBRRRa</h2>
+            <h1>0.5 ETH</h1>
+            <p>15 мин 03 сек</p>
+            </div>
+            <div class="dr_1 box 0.01ETH" id="hide2">
+            <img src="img/3.png" alt="" id="i1">
+            <img src="img/3.3.png" alt="" id="i11">
+            <h2>Diamonds(4)</h2>
+            <h1>0.008 ETH</h1>
+            <p>23 часа 05 мин 08 сек</p>
+            </div>
+            <div class="dr_3 box 1.0ETH" id="hide1">
+            <img src="img/4.png" alt="" id="i1">
+            <img src="img/4.4.png" alt="" id="i12">
+            <h2>Holofobia-2</h2>
+            <h1>1.0 ETH</h1>
+            <p>01 час 15 мин 55 сек</p>
+            </div>
+        </div>
+        <div class="cl2">
+            <div class="dr_1 box 0.1ETH" id="hide3">
+            <img src="img/5.png" alt="" id="i1">
+            <img src="img/5.5.png" alt="" id="i11">
+            <h2>Baby Yoda 1</h2>
+            <h1>0.2 ETH</h1>
+            <p>01 часа 28 мин 11 сек</p>
+            </div>
+            <div class="dr_1 box 0.01ETH">
+            <img src="img/6.png" alt="" id="i1">
+            <img src="img/6.6.png" alt="" id="i11">
+            <h2 id="ali">alien vs. predator(01)</h2>
+            <h1>0.09 ETH</h1>
+            <p>08 часа 44 мин 43 сек</p>
+            </div>
+            <div class="dr_1 box 1.0ETH" id="hide2">
+            <img src="img/7.png" alt="" id="i1">
+            <img src="img/7.7.png" alt="" id="i11">
+            <h2>IAMDECEPTICON</h2>
+            <h1>0.1 ETH</h1>
+            <p>55 мин 18 сек</p>
+            </div>
+            <div class="dr_1 box 0.01ETH" id="hide1">
+            <img src="img/8.png" alt="" id="i1">
+            <img src="img/8.8.png" alt="" id="i12">
+            <h2>Ghostbusterrrrrrrs</h2>
+            <h1>0.09 ETH</h1>
+            <p>18 мин 12 сек</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="sliderNew">
+        <img src="img/new stick.png" alt="" id="newstick">
+        <div class="wrap">
+            <div class="sliderNew-item fade">
+                <img src="img/slide 1.png" alt="">
+                <img src="img/slide 2.png" alt="">
+                <img src="img/slide 3.png" alt="" id="img1-1">
+            </div>
+            <div class="sliderNew-item fade">
+                <img src="img/slide 1.2.png" alt="" id="img1-2">
+                <img src="img/slide 2.2.png" alt="" id="img1-3">
+            </div>
+            <div class="sliderNew-item fade">
+                <img src="img/slide 1.3.png" alt="" id="img1-4">
+            </div>
+            <div class="prev">&lt;</div>
+			<div class="next">&gt;</div>
+        </div>
+        <div class="sliderNew-dots">
+            <div class="dot dot-active"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+        </div>
+
+    </div>
+    <div class="red">
+        <div class="sent">
+            <p>Будь в курсе новинок! Подпишись на рассылку!</p>
+            <input type="email" placeholder="Имя">
+            <input type="email" placeholder="E-mail">
+            <button>Подписаться</button>
+        </div>
+        <img src="img/ok.png" alt="">
+    </div>
+
+    <div class="white">
+        <div class="white1">
+            <h1>Стать автором</h1>
+            <h2>Если ты художник или стремишься им стать — добро пожаловать к нам!</h2>
+            <p>Отправь нам от трёх до пяти своих работ и напиши свой ник в телеграме. 
+               Если наши кураторы решат, что нам по пути, то мы обязательно свяжемся с 
+               тобой и обговорим условия сотрудничества! Удачи!</p>
+            <img src="img/lv.png" alt="">
+        </div>
+        <div class="white2">
+            <img src="img/jpg.png" alt="">
+            <input type="email" name="" id="" placeholder="@telegram_nickname">
+            <button>Отправить</button>
+        </div>
+    </div>
+    <div class="info" id="tab">
+        <div class="info-title">Топ продаж</div>
+        <div class="info-header">
+            <div class="info-header-tab active">TOP 1</div>
+            <div class="info-header-tab">TOP 2</div>
+        </div>
+        <div class="info-tabcontent fade">
+            <img src="img/tab 1.png" alt="">
+            <img src="img/tab 2.png" alt="">
+            <img src="img/tab 3.png" alt="">
+        </div>
+        <div class="info-tabcontent fade">
+            <img src="img/tab 4.png" alt="">
+            <img src="img/tab 5.png" alt="">
+            <img src="img/tab 6.png" alt="">
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <div class="back">
+            <h1>Для попадания в топ необходимо:</h1>
+            <div id="accordion">
+            <p class="accordion-head">Критерий 1</p>
+            <div class="accordion-block">
+                Минимум пять опубликованных работ
+            </div>
+            <p class="accordion-head">Критерий 2</p>
+            <div class="accordion-block">
+                Инвайт трём коллегам по цеху
+            </div>
+            <p class="accordion-head">Критерий 3</p>
+            <div class="accordion-block">
+                Верифицированный аккаунт
+            </div>
+            <img src="img/smile.png" alt="">
+            </div>
+        </div>
+        <div class="aur">
+            <h1>AURA</h1>
+            <p>stickers collection</p>
+            <div class="sogl">
+                <p>Соглашение</p>
+                <p>Лицензия</p>
+                <p>FAQ</p>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>

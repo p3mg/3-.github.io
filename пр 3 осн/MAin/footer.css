@@ -1,0 +1,144 @@
+.footer{
+    padding: 0;
+    margin: 0;
+}
+.back{
+    position: absolute;
+    top: 5360px;
+    background-color: #37373E;
+    height: 332px;
+    width: 100%;
+}
+.back h1{
+    font-family: Russo One;
+    font-weight: 100;
+    color: white;
+    margin-left: 16vw;
+    margin-bottom: 1vh;
+    
+
+}
+.back img{
+    position: absolute;
+    margin-left: 42vw;
+    top:100px ;
+}
+#accordion {
+	width: 70%;
+	margin-left: 16vw;
+}
+.accordion-head {
+    padding-left: 1vw;
+    padding-top: 1vh;
+    font-family: Russo One;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+	cursor: pointer;
+	text-align:left;
+	font-size: 20px;
+    background-color:cyan ;
+    width: 30%;
+    height:3vh ;
+    border-radius: 20px 20px 20px 20px;
+}
+.accordion-head.active-p + .accordion-block {
+	display: block;
+}
+.accordion-head.active-style {
+    display: block;
+	color: #000000;
+	font-weight: 100;
+	text-decoration: none;
+    border-radius: 20px 20px 0px 0px;
+    animation-name: animat;
+    animation-duration: 1.4s;
+}
+.accordion-block {
+    position: relative;
+    top: -1.8vh;
+    width: 29.5%;
+    font-family: Russo One;
+	display: none;
+	font-size: 18px;
+	padding: 1vh;
+	border-radius: 20px 20px 20px 20px;
+	background-color: #80859f7a;
+	color: #00cff3;
+    animation-name: animt;
+    animation-duration: 1.4s;
+}
+.accordion-block.active-content {
+    
+	opacity: 1;
+    border-radius: 0px;
+    position: relative;
+	display: block;
+    animation-name: animt;
+    animation-duration: 1.4s;
+}
+@keyframes animt{
+    from {
+        opacity: 0;
+        left: 0;
+        top: -4vh;
+        border-radius: 20px 20px 20px 20px;
+    }
+    to{
+        opacity: 1;
+        left: 0vw;
+        top: -1.8vh;
+        border-radius: 0px 0px 20px 20px;
+    }
+}
+@keyframes animat{
+    from{
+        border-radius: 20px 20px 20px 20px;
+    }
+    to {
+        border-radius: 20px 20px 0px 0px;
+    }
+}
+
+.aur{
+    position: absolute;
+    top: 5692px;
+    width: 100%;
+    height: 80px;
+    background-color: #46F4DB;
+    align-self: center;
+    
+    
+    
+}
+.aur h1{
+    margin-left: 16vw;
+    position: relative;
+    top: -15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:40px ;
+    letter-spacing: 1px;
+    
+}
+.aur p{
+    position: relative;
+    top: -45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:12px ;
+    font-weight: 600;
+    margin-left: 16vw;
+}
+.sogl{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    position: absolute;
+    left: 55vw;
+    top: 70px;
+    
+}
+.sogl p{
+    font-family: Russo One;
+    font-size: 20px;
+    width: 10%;
+    margin: 0;
+}

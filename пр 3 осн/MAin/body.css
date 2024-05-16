@@ -1,0 +1,974 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+.body{
+    display: flex;
+    justify-content: center;
+    /* align-items: center;
+    width: 100%; */
+}
+.stic{
+    display: flex;
+    justify-content: space-around;
+    height: 680px;
+    width: 100%;
+    background-color: black;
+}
+#stic{
+    position: relative;
+    width: 1025px;
+    height: 680px;
+}
+.crypt{
+    width: 621px;
+    height: 360px;
+    position: relative;
+    margin-left: 14vw;
+    top: 30px;
+}
+.crypt p{
+    position: relative;
+    top: 40px;
+    font-size: 70px;
+    width: 621px;
+    height: 254px;
+    font-weight: 400;
+    line-height: 80px;
+    color: white;
+    font-family:Russo One;
+}
+#bt1{
+    color: black;
+    width: 176px;
+    font-weight: 200;
+    height: 70px;
+    border-radius: 40px;
+    background: linear-gradient( rgb(0, 217, 255),green);
+    font-size: 20px;
+    font-family:Russo One;
+}
+#bt1:hover{
+    color: rgb(255, 251, 251);
+    width: 176px;
+    font-weight: 200;
+    height: 70px;
+    border-radius: 40px;
+    background: linear-gradient( green,rgb(0, 217, 255));
+    transition: 0.4s;
+    font-size: 20px;
+    font-family:Russo One;
+}
+#bt2{
+    color: cyan;
+    background-color: rgb(0, 0, 0);
+    width: 247px;
+    height: 70px;
+    border-radius: 40px;
+    border: solid 2px rgb(0, 217, 255);
+    font-size: 20px;
+    font-weight: 200;
+    font-family:Russo One;
+}
+#bt2:hover{
+    color: rgb(0, 0, 0);
+    background-color: white;
+    width: 247px;
+    height: 70px;
+    border-radius: 40px;
+    border: solid 2px rgb(0, 217, 255);
+    font-size: 20px;
+    transition: 0.4s;
+    font-weight: 200;
+    font-family:Russo One;
+}
+.ved{
+    top: 800px;
+    position: absolute;
+    left: 16vw;
+    display: flex;
+    justify-content: center;
+    width: 1280px;
+    height: 564px;
+}
+.auc{
+    position:absolute;
+    left: -2vw;
+    display:flex ;
+    flex-direction:row;
+    height: 564px;
+    width: 460px;
+}
+.auc p{
+    position: relative;
+    
+    font-family: Russo One;
+    font-size: 70px;
+    font-weight: 400;
+}
+.auc button{
+    position: relative;
+    left:20px;
+    top: 100px;
+    font-family: Russo One;
+    font-size: 11px;
+    font-weight: 200;
+    width: 135px;
+    height: 36px;
+    color: red;
+    border-radius: 20px;
+    border: solid 2px red;
+    background-color: white;
+}
+#img1{
+    position: absolute;
+    top: 200px;
+    left: -20px;
+    width: 460px;
+    height: 460px;
+}
+#img2{
+    position: absolute;
+    top: 200px;
+    width: 228px;
+    height: 70px;
+    border-radius: 30px;
+}
+#p2{
+    position: absolute;
+    top: 250px;
+    left: 530px;
+    width: 446px;
+    height: 50px;
+    font-weight: 100;
+    font-size: 48px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.with{
+    position: relative;
+    top: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 190vh;
+    height: 50vh;
+    left: 520px;
+    max-width: 800px;
+    justify-content: space-between;
+}
+#img3{
+    
+    top: 400px;
+    width: 296px;
+    height: 174px;
+    border-radius: 50px;
+
+}
+#img4{
+    width: 400px;
+    height: 174px;
+    border-radius: 50px;
+    margin-right: 70px;
+}
+       
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------- modal */
+#rz{
+    font-family: Russo One;
+}
+.modal-open {
+	width: 70%;
+	margin: 100px auto;
+	box-shadow: 1px 1px 10px #ffffff;
+	padding: 15px;
+}
+.modal-open__img {
+	width: 100%;
+}
+.modal-open__descr {
+	font-size: 20px;
+	text-align: justify;
+	margin-top: 25px;
+}
+#open-modal__btn {
+    font-family: Russo One;
+	cursor: pointer;
+	display: block;
+	position: relative;
+    top: 500px;
+    left: -290px;
+    border: none;
+    width: 296px;
+    height: 70px;
+    background-color: cyan;
+    color: black;
+    border-radius: 80px;
+}
+#open-modal__btn:hover {
+    font-family: Russo One;
+	cursor: pointer;
+	display: block;
+	position: relative;
+    top: 500px;
+    left: -290px;
+    border: none;
+    width: 296px;
+    height: 70px;
+    background-color: rgb(44, 46, 46);
+    color: rgb(228, 220, 220);
+    border-radius: 80px;
+    transition: 0.4s;
+}
+.modal {
+	/*  */
+	display: none;
+	/*  */
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.modal_active {
+	display: block;
+}
+.modal__content {
+    position: relative;
+    top: 400px;
+	width: 80%;
+	max-width: 700px;
+	margin: 100px auto;
+	box-shadow: 1px 1px 10px #777777;
+	padding: 35px;
+	background-color: #fff;
+	/* Для анимации */
+	position: relative;
+	animation-name: animatetop;
+	animation-duration: 0.4s;
+}
+.modal__content button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:600;
+    font-size: 14px;
+    align-self: center;
+    width: 132px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+}
+.modal__content button:hover {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:600;
+    font-size: 14px;
+    align-self: center;
+    width: 132px;
+    height: 50px;
+    background-color: rgb(255, 252, 252);
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    cursor:pointer;
+}
+.modal__close,
+.modal__closeBtn {
+	font-size: 40px;
+	color: #777777;
+	cursor: pointer;
+	float: right;
+}
+@keyframes animatetop {
+	from {
+		top: -300px;
+		opacity: 0;
+	}
+	to {
+		top: 400px;
+		opacity: 1;
+	}
+}
+/* ------------------------------------------------- modal */
+
+
+
+
+
+
+
+
+/* ------------------------------------------------filter */
+.hide{
+    position: relative;
+    opacity: 1;
+    animation-name: a1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes a1{
+    to {
+        opacity: 0;
+        min-height: 0;
+        min-width: 0;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        margin-left: -300px;
+    }
+}
+nav ul{
+    display: inline-block;
+}
+
+nav ul li{
+    margin-left: 20px;
+    position: relative;
+    top: -20px;
+    left: -2vw;
+    cursor: pointer;
+    color: rgb(31, 180, 206);
+    font-family: Russo One;
+    font-size: 20px;
+    display: inline-block;
+    
+}
+.active{
+    margin-left: 20px;
+    position: relative;
+    cursor: pointer;
+    color: rgb(253, 79, 26);
+    font-family: Russo One;
+    font-size: 20px;
+    display: inline-block;
+    
+}
+.drau{
+    position: absolute;
+    top: 1700px;
+    margin-left: 28vw;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#dra{
+    left: 15vw;
+    position: absolute;
+    top: 1600px;
+    font-size: 20px;
+    font-family: Russo One;
+    font-weight: 400;
+    width: 184px;
+    height: 24px;
+}
+.cl1{
+    display: flex;
+    flex-wrap: wrap;
+    
+    width: 90%;
+}
+.cl2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+
+
+/* ------------------------------------------------filter */
+/* ---------------- */
+.dr_1{
+    margin: 1%;
+    width: 296px;
+    height: 342px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient( 180deg ,#EDEDF2 50%, black 50%);
+    border-radius: 60px;
+}
+.dr_1 #i1{
+    position: relative;
+    top: 5px;
+    left: 68px;
+    border-radius: 100%;
+    width: 160px;
+    height: 160px;
+}
+.dr_1 #i11{
+    position: relative;
+    margin-left: 20px;
+    top: 25px;
+    width: 132px;
+    height: 24px;
+}
+.dr_1 #i12{
+    position: relative;
+    margin-left: 20px;
+    top: 25px;
+    width: 63px;
+    height: 24px;
+}
+.dr_1 h2{
+    position: relative;
+    margin-left: 20px;
+    top: 20px;
+    color: white;
+    width: 254px;
+    height: 20px;
+    font-size: 20px;
+    font-family: Russo One;
+    font-weight: 200;
+}
+.dr_1 h1{
+    position: relative;
+    margin-left: 20px;
+    top: 5px;
+    color: #46F4DB;
+    width: 120px;
+    height: 20px;
+    font-size: 20px;
+    font-family: Russo One;
+    font-weight: 200;
+}
+.dr_1 p{
+    position: relative;
+    margin-left: 20px;
+    top: -10px;
+    color: gray;
+    width: 190px;
+    height: 20px;
+    font-size: 14px;
+    font-family: Russo One;
+    font-weight: 100;
+}
+/* ------------------ */
+
+
+
+
+/* ---------------- */
+.dr_2 #i1{
+    position: relative;
+    top: 5px;
+    left: 68px;
+    border-radius: 100%;
+    width: 160px;
+    height: 160px;
+}
+.dr_2 #i11{
+    position: relative;
+    margin-left: 20px;
+    top: 25px;
+    width: 132px;
+    height: 24px;
+}
+.dr_2 #i12{
+    position: relative;
+    margin-left: 20px;
+    top: 25px;
+    width: 63px;
+    height: 24px;
+}
+.dr_2 h2{
+    position: relative;
+    margin-left: 20px;
+    top: 20px;
+    color: white;
+    width: 254px;
+    height: 20px;
+    font-size: 20px;
+    font-family: Russo One;
+    font-weight: 200;
+}
+.dr_2 h1{
+    position: relative;
+    margin-left: 20px;
+    top: 5px;
+    color: #46F4DB;
+    width: 120px;
+    height: 20px;
+    font-size: 20px;
+    font-family: Russo One;
+    font-weight: 200;
+}
+.dr_2 p{
+    position: relative;
+    margin-left: 20px;
+    top: -10px;
+    color: gray;
+    width: 190px;
+    height: 20px;
+    font-size: 14px;
+    font-family: Russo One;
+    font-weight: 100;
+}
+.dr_2{
+    margin: 1%;
+    width: 296px;
+    height: 342px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient( 180deg ,#EDEDF2 50%, black 50%);
+    border-radius: 60px;
+}
+/* --------------- */
+
+
+
+
+
+.dr_3 #i1{
+    position: relative;
+    top: 5px;
+    left: 68px;
+    border-radius: 100%;
+    width: 160px;
+    height: 160px;
+}
+.dr_3 #i11{
+    position: relative;
+    margin-left: 20px;
+    top: 25px;
+    width: 132px;
+    height: 24px;
+}
+.dr_3 #i12{
+    position: relative;
+    margin-left: 20px;
+    top: 25px;
+    width: 63px;
+    height: 24px;
+}
+.dr_3 h2{
+    position: relative;
+    margin-left: 20px;
+    top: 20px;
+    color: white;
+    width: 254px;
+    height: 20px;
+    font-size: 20px;
+    font-family: Russo One;
+    font-weight: 200;
+}
+.dr_3 h1{
+    position: relative;
+    margin-left: 20px;
+    top: 5px;
+    color: #46F4DB;
+    width: 120px;
+    height: 20px;
+    font-size: 20px;
+    font-family: Russo One;
+    font-weight: 200;
+}
+.dr_3 p{
+    position: relative;
+    margin-left: 20px;
+    top: -10px;
+    color: gray;
+    width: 190px;
+    height: 20px;
+    font-size: 14px;
+    font-family: Russo One;
+    font-weight: 100;
+}
+.dr_3{
+    margin: 1%;
+    width: 296px;
+    height: 342px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient( 180deg ,#EDEDF2 50%, black 50%);
+    border-radius: 60px;
+}
+/* ----------- */
+/* ------------------------------------------------filter */
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------- slide */
+#newstick{
+    
+    margin-top: 80px;
+    margin-left: 300px;
+    width: 551px;
+    height: 72px;
+    z-index: 3;
+}
+
+.sliderNew {
+    background-color: #000000;
+    width: 100%;
+    height: 684px;
+    position: absolute;
+    top: 2500px;
+	margin: 100px 0;
+    align-items: center;
+}
+.wrap {
+    
+	width: 100%;
+	margin: 0 auto;
+	height: 624px;
+	position: relative;
+}
+.sliderNew-item {
+    position: relative;
+    display: flex;
+    height: 300px;
+	width: 100%;
+	height: 300px;
+    left: 300px;
+    top: 50px;
+    animation-name: animate;
+	animation-duration: 1.4s;
+}
+@keyframes animate {
+	from {
+		
+		opacity: 0;
+	}
+	to {
+		
+		opacity: 1;
+	}
+}
+.sliderNew-item fade img {
+    flex-direction: row;
+    display: flex;
+    height: 300px;
+	flex-wrap: wrap;
+    margin-left: 200px;
+    
+    
+}
+.prev,
+.next {
+	display: flex;
+    flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 45px;
+	z-index: 100;
+	width: 10%;
+	height: 99%;
+	position: absolute;
+	top: -100px;
+}
+.prev {
+    color: #ff0000;
+	left: 0;
+    display: none;
+}
+.next {
+    color: #ff0000;
+	right: 0;
+    display: none;
+}
+.prev:hover,
+.next:hover {
+    color: rgb(53, 52, 52);
+	background-color: none;
+}
+
+.sliderNew-dots {
+	text-align: center;
+	margin: 1rem 0;
+}
+.dot {
+	cursor: pointer;
+	height: 25px;
+	width: 25px;
+	margin: 0 2px;
+	background-color: none;
+    border: solid 3px red;
+	border-radius: 50%;
+	display: inline-block;
+    position: relative;
+    transition: 0.4s;
+    top: -200px;
+}
+.dot.dot-active,
+.dot:hover {
+	background-color: #ff0000;
+}
+/* ------------------------------------------------------- slide */
+
+
+
+
+
+
+
+.red{
+    position: absolute;
+    top: 3280px;
+    background-color: #D13130;
+    width: 100%;
+    height: 391px;
+}
+.sent{
+    margin-top: 2vh;
+    margin-left: 16vw;
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    
+}
+.sent p{
+    
+    width: 500px;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    font-family: Russo One;
+}
+.sent input{
+    width: 460px;
+    height: 70px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    margin-bottom: 1vh;
+    color: white;
+}
+.sent input::placeholder{
+    color: #EDEDF2;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 2vw;
+    font-weight: 100;
+    font-size: 15px;
+}
+.sent button{
+    background-color: #46F4DB;
+    color: rgb(39, 38, 38);
+    font-family: Russo one;
+    border: none;
+    border-radius: 50px;
+    width: 296px;
+    height: 70px;
+    float: left;
+    align-self: baseline;
+    font-size: 16px;
+}
+.sent button:hover{
+    background-color: rgb(44, 46, 46);
+    color: rgb(228, 220, 220);
+    transition: 0.4s;
+    font-family: Russo one;
+    border-radius: 50px;
+    border: none;
+    width: 296px;
+    height: 70px;
+    float: left;
+    align-self: baseline;
+    font-size: 16px;
+}
+.red img{
+    width: 728px;
+    height: 391px;
+    position: absolute;
+    left: 900px;
+    top: 0px;
+}
+
+
+
+
+
+
+.white{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
+    top: 3671px;
+    height: 684px;
+    
+}
+.white1{
+    position: relative;
+    top: 10px;
+    max-width: 624px;
+    margin-left: 16vw;
+}
+.white1 h1{
+    position: relative;
+    top: 20px;
+    width: 449px;
+    font-family: Russo One;
+    font-size: 60px;
+    font-weight: 400;
+    color: black;
+}
+.white1 h2{
+    width: 624px;
+    font-family: Russo One;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+.white1 p{
+    width: 624px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+
+.white2{
+    position: relative;
+    top: 90px;
+    max-width: 624px;
+    margin-left: 3vw;
+}
+.white2 img{
+    width: 624px;
+    border-radius: 50px;
+}
+.white2 input{
+    position: relative;
+    top: 25px;
+    width: 624px;
+    border: none;
+    border-radius: 40px;
+    height: 70px;
+    color: #717178;
+    background-color: #EDEDF2;
+    
+}
+.white2 input::placeholder{
+    padding-left: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+.white2 button{
+    position: relative;
+    top: 50px;
+    background-color: #46F4DB;
+    color: rgb(39, 38, 38);
+    font-family: Russo one;
+    border: none;
+    border-radius: 50px;
+    width: 296px;
+    height: 70px;
+    float: left;
+    align-self: baseline;
+    font-size: 16px;
+}
+.white2 button:hover{
+    background-color: rgb(44, 46, 46);
+    color: rgb(228, 220, 220);
+    transition: 0.4s;
+    font-family: Russo one;
+    border-radius: 50px;
+    border: none;
+    width: 296px;
+    height: 70px;
+    float: left;
+    align-self: baseline;
+    font-size: 16px;
+}
+
+
+
+
+
+/* ---------------------------------------------------------- tab */
+.info {
+    width: 100%;
+    position: absolute;
+    top: 4400px;
+    height: 870px;
+    background-color: black;
+	padding: 50px 0;
+}
+.info-title {
+    margin-left: 16vw;
+    font-family: Russo One;
+	font-weight: 400;
+	font-size: 60px;
+	line-height: 60px;
+	color: #ffffff;
+	
+}
+.info-header {
+	display: flex;
+	/* margin-left: 44vw; */
+    justify-content: center;
+    margin-bottom: 2vh;
+	flex-wrap: wrap;
+}
+.info-header-tab {
+    text-align: center;
+    margin-right: 2vh;
+    cursor: pointer;
+	font-weight: 700;
+	color: #333333;
+    font-size: 30px;
+    font-family: Russo One;
+    background-color: rgb(0, 0, 0);
+    border-radius: 0px;
+    border: 1vh solid  rgb(0, 0, 0) ;
+}
+
+.info-tabcontent {
+    display: block;
+    justify-content:center ;
+    margin-left: 30%;
+	width: 50%;
+    
+    
+	
+}
+.info-tabcontent img {
+	border-radius: 50px;
+    margin-bottom: 4vh;
+    width: 724px;
+    
+    
+}
+
+.info .hide {
+	display: none;
+}
+.info .show {
+	display: block;
+}
+.fade {
+	animation: fade 2.5s;
+}
+.active {
+    background-color: rgb(148, 145, 145);
+    border-radius: 50px;
+    transition: 0.6s;
+    border: 1vh solid  rgb(148, 145, 145) ;
+    color: whitesmoke;
+    
+}
+@keyframes fade {
+	from {
+		opacity: 0.1;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+
+/* --------------------------------------------- tab */
+
